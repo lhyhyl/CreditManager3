@@ -1,0 +1,19 @@
+body {
+  background: url("../img/bg.-007.png") repeat;
+}
+.margin-t {
+  margin-top: 90px;
+}
+.margin-t .bg-info {
+  padding: 30px 0;
+}
+.margin-t .textarea-margin {
+  margin-bottom: 40px;
+}
+.margin-t .bg-shdow {
+  box-shadow: 10px 10px 50px #888888;
+}
+.margin-t .form_group_m {
+  margin-top: 5px;
+}
+/*# sourceMappingURL=operate.css.map */

@@ -1,0 +1,24 @@
+body {
+  background: url("../img/bg.-007.png") repeat;
+}
+.margin-t {
+  margin-top: 90px;
+}
+.margin-t .submit-margin {
+  margin-top: 41px;
+  margin-bottom: 34px;
+}
+.margin-t .form_m {
+  margin-top: 54px;
+}
+.margin-t .form_m .padding {
+  padding-right: 0px ;
+  padding-left: 0px ;
+}
+.margin-t .label_m {
+  margin-bottom: 26px;
+}
+.margin-t .label_m_1 {
+  margin-bottom: 22px;
+}
+/*# sourceMappingURL=department.css.map */

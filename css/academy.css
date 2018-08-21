@@ -1,0 +1,20 @@
+body {
+  background: url("../img/bg.-007.png") repeat;
+}
+.margin-t {
+  margin-top: 90px;
+}
+.margin-t .form1 {
+  margin-bottom: 20px;
+}
+.margin-t .m_btn {
+  margin-top: 58px;
+}
+.margin-t .form-control {
+  margin-bottom: 20px;
+}
+.margin-t .show1,
+.margin-t .show2 {
+  padding-right: 0;
+}
+/*# sourceMappingURL=academy.css.map */

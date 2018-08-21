@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+      <title>Bootstrap 101 Template</title>
+      
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/nav-header.css">
+      <link rel="stylesheet" href="css/apply.css">
+      <link rel="stylesheet" href="css/register.css">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      
+      <![endif]-->
+
+</head>
+<body>
+
+<!--导航条开始-->
+<div class="navbar navbar-default navbar-fixed-top ">
+      <div class="container">
+            <div class="navbar-header ">
+                  <a href="onload.html" class="navbar-brand a-brand">
+                  
+                  </a>
+                  <button class="navbar-toggle" data-target="#onload-collapse" type="button" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+            </div>
+            <div class="navbar-collapse" id="onload-collapse">
+                  <ul class="nav navbar-nav">
+                        <li><a href="onload.html">学业水平奖励学分&综合素质拓展学分 管理系统</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">退出</a></li>
+                  </ul>
+            
+            </div>
+      </div>
+</div>
+<!--导航条结束-->
+<!--主体部分开始-->
+<!--主体内容开始-->
+<div class="container margin-t">
+      <div class="row">
+            <div class="col-md-10 col-sm-offset-1 ">
+                  <form action="" class="form-horizontal text-center bg-info form-bg pad">
+                        <h3 class="text-center">学生申请页面</h3>
+                        <br><br><br>
+                        <div class="row">
+                              <div class="form-group col-sm-12 ">
+                                    <label class="col-xs-3 text-left"  >学业水平奖励学分&综合素质拓展学分</label>
+                                    <div class="col-xs-3">
+                                          <select type="text" class="form-control s-idcard" id="f-select">
+                                                <option>请选择项目类型</option>
+                                                <option>大学生竞赛</option>
+                                                <option>论文发表</option>
+                                                <option>科技成果/发明创造</option>
+                                                <option>科技立项项目/科研项目</option>
+                                                <option>大学生创新创业计划项目</option>
+                                                <option>职业资格考试</option>
+                                                <option>考取统招硕士研究生</option>
+                                                <option>毕业论文校级优秀</option>
+                                                <option>通过更高难度的单科水平考试</option>
+                                                <option>其他校方认可的优秀表现</option>
+                                          </select>
+                                    </div>
+                                    
+                                    <div class="col-xs-3">
+                                          <select type="text" class="form-control s-idcard" id="subtype">
+                                                <option value="">子项目类型</option>
+
+                                          </select>
+                                          <span style="font-size: 12px;color: red;">如未找到，请在右侧编辑框自行填写</span>
+
+                                    
+                                    </div>
+                                    <div class="col-xs-3">
+                                          <input type="text" class="form-control" placeholder="请填写项目名称">
+
+
+                                    </div>
+
+                              
+                              
+                              </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                              <div class="form-group col-sm-12 ">
+                                    <span class="col-xs-2 text-left materials">上传证明材料</span>
+                                    <img  width="200px" src="img/uploading1.jpg" alt="" class="col-xs-3 img-responsive">
+                                    
+                                    <div class="col-xs-3 hidden-md distance">
+                                          <label for="prove" class="  btn btn-default btn-lg">上传</label>
+                                          <input type="file" id="prove" class="form-control s-idcard "
+                                                 style="display: none;" accept=".rar">
+                                          <span class="text-danger">请将文件压缩为rar格式后上传</span>
+                                    </div>
+                              
+                              
+                              </div>
+                        </div>
+                        <div class="form-group in-submit ">
+                              <label for="submit" class="col-xs-2 sr-only">注册</label>
+                              <div class="col-xs-8 col-xs-offset-2">
+                                    <input type="submit" id="submit" class="form-control btn btn-warning ">
+                              </div>
+                              <div class="col-xs-2  ">
+                              
+                              </div>
+                        </div>
+                  </form>
+            </div>
+      </div>
+</div>
+<div class="container margin-t">
+      <div class="row">
+            
+            <div class="col-sm-10 col-sm-offset-1">
+                  <table class="table table-bordered table-responsive table-striped table-hover table-condensed ">
+                        <h3 class="text-center">审核状态信息</h3>
+                        <thead>
+                        <tr>
+                              <th>序号</th>
+                              <th>置换学分</th>
+                              <th>状态</th>
+                        
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                              <td>001</td>
+                              <td>Reddy</td>
+                              <td>电计系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>002</td>
+                              <td>Pallod</td>
+                              <td>管理系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>003</td>
+                              <td>Sen</td>
+                              <td>经济系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>004</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>005</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>006</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        </tr>
+                        <tr>
+                              <td>007</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>008</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>009</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>010</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        
+                        </tr>
+                        <tr>
+                              <td>011</td>
+                              <td>Sen</td>
+                              <td>资土系</td>
+                        
+                        </tr>
+                        
+                        </tbody>
+                  </table>
+            </div>
+      </div>
+</div>
+<!--主体内容结束-->
+<!--主体部分结束-->
+
+<script src="js/jquery v3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/apply.js"></script>
+<script src="js/q-apply.js"></script>
+</body>
+</html>

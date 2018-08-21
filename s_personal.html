@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="mymodule1">
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+      <title>学生个人中心</title>
+      
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/nav-header.css">
+      <link rel="stylesheet" href="css/register.css">
+      
+      
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      
+      <![endif]-->
+</head>
+<body>
+<!--导航条开始-->
+<div class="navbar navbar-default navbar-fixed-top ">
+      <div class="container">
+            <div class="navbar-header ">
+                  <a href="onload.html" class="navbar-brand a-brand">
+                  
+                  </a>
+                  <button class="navbar-toggle" data-target="#onload-collapse" type="button" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+            </div>
+            <div class="navbar-collapse" id="onload-collapse">
+                  <ul class="nav navbar-nav">
+                        <li><a href="onload.html">课外学分管理系统</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">退出</a></li>
+                  </ul>
+            
+            </div>
+      </div>
+</div>
+<!--导航条开始-->
+<!--主体内容开始-->
+<div class="container margin-t" id="app">
+      <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                  <h3 class="text-center">学生个人中心</h3>
+                  <form class="form-horizontal bg-info form-bg">
+                        <div class="form-group">
+                              <label for="idcard" class="col-xs-2 control-label">学号</label>
+                              <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="idcard" placeholder="学号" disabled
+                                           value="201520601135">
+                              </div>
+                              <span></span>
+                        </div>
+                        <div class="form-group">
+                              <label for="name" class="col-xs-2 control-label">姓名</label>
+                              <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="name" placeholder="姓名"
+                                           :disabled = "show1" value="张三" >
+                              </div>
+                              <span class="btn btn-info " @click="show1 = !show1" v-show="show1">修改</span>
+                              <span class="btn btn-success " @click="show1 = !show1" v-show="!show1">确定</span>
+                        </div>
+                        <div class="form-group">
+                              <label for="department" class="col-xs-2 control-label">系别</label>
+                              <div class="col-xs-8">
+                                    <select class="form-control" id="department" :disabled="show2">
+                                          <option value="">电计信息与计算机工程系</option>
+                                          <option value="">管理系</option>
+                                          <option value="">外语系</option>
+                                          <option value="">核能系</option>
+                                          <option value="">自动化工程系</option>
+                                          <option value="">艺术设计系</option>
+                                          <option value="">经济系</option>
+                                          <option value="">资源勘查与土木工程系</option>
+                                    </select>
+                              </div>
+                              <span class="btn btn-info " @click="show2 = !show2" v-show="show2">修改</span>
+                              <span class="btn btn-success " @click="show2 = !show2" v-show="!show2">确定</span>
+                        </div>
+                        <div class="form-group">
+                              <label for="grade" class="col-xs-2 control-label">年级</label>
+                              <div class="col-xs-8">
+                                    <select class="form-control" id="grade" :disabled="show3">
+                                          <option value="">2000级</option>
+                                          <option value="">2001级</option>
+                                          <option value="">2002级</option>
+                                          <option value="">2003级</option>
+                                          <option value="">2004级</option>
+                                          <option value="">2005级</option>
+                                          <option value="">2006级</option>
+                                          <option value="">2007级</option>
+                                          <option value="">2008级</option>
+                                          <option value="">2009级</option>
+                                          <option value="">2010级</option>
+                                          <option value="">2011级</option>
+                                          <option value="">2012级</option>
+                                          <option value="">2013级</option>
+                                          <option value="">2014级</option>
+                                          <option value="">2015级</option>
+                                          <option value="">2016级</option>
+                                          <option value="">2017级</option>
+                                          <option value="">2018级</option>
+                                    </select>
+                              </div>
+                              <span class="btn btn-info " @click="show3 = !show3" v-show="show3">修改</span>
+                              <span class="btn btn-success " @click="show3 = !show3" v-show="!show3">确定</span>
+                        </div>
+                        <div class="form-group">
+                              <label for="major" class="col-xs-2 control-label">专业</label>
+                              <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="major" placeholder="专业"
+                                           :disabled="show4">
+                              </div>
+                              <span class="btn btn-info " @click="show4 = !show4" v-show="show4">修改</span>
+                              <span class="btn btn-success " @click="show4 = !show4" v-show="!show4">确定</span>
+                        </div>
+                        <div class="form-group">
+                              <label for="phone" class="col-xs-2 control-label">电话</label>
+                              <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="phone" placeholder="电话"
+                                          :disabled="show5">
+                              </div>
+                              <span class="btn btn-info " @click="show5 = !show5" v-show="show5">修改</span>
+                              <span class="btn btn-success " @click="show5 = !show5" v-show="!show5">确定</span>
+                        </div>
+                        <div class="form-group">
+                              <label for="qqnumber" class="col-xs-2 control-label">QQ</label>
+                              <div class="col-xs-8">
+                                    <input type="text" class="form-control" id="qqnumber" placeholder="QQ"
+                                           :disabled="show6">
+                              </div>
+                              <span class="btn btn-info " @click="show6 = !show6" v-show="show6">修改</span>
+                              <span class="btn btn-success " @click="show6 = !show6" v-show="!show6">确定</span>
+                        </div>
+                        <div class="form-group">
+                              <label for="password" class="col-xs-2 control-label" v-show="show7">密码</label>
+                              <label for="password" class="col-xs-2 control-label" v-show="!show7">新密码</label>
+                              <div class="col-xs-8">
+                                    <input type="password" class="form-control" id="password" placeholder="密码"
+                                           :disabled="show7" v-model="psd">
+                              </div>
+                              <span class="btn btn-info " @click="show7 = !show7" v-show="show7">修改</span>
+                              <span class="btn btn-success " @click="show7 = !show7" v-show="!show7">确定</span>
+                        </div>
+                        <div class="form-group" v-show="!show7">
+                              <label for="r_password" class="col-xs-2 control-label">确认密码</label>
+                              <div class="col-xs-8">
+                                    <input type="password" class="form-control" id="r_password" placeholder="确认密码" v-model="r_psd">
+                              </div>
+                              <span >{{psd == null || r_psd == null ?"":psd == r_psd ? "密码一致":"密码不一致"}}</span>
+      
+                        </div>
+                        <br><br><br><br>
+                        <input type="submit" value="确认修改" class="btn btn-block btn-info"
+                        >
+                  </form>
+            
+            </div>
+      </div>
+</div>
+<!--主体内容结束-->
+
+<script src="js/jquery v3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/vue.js"></script>
+<script>
+   /* angular.module("mymodule1", ["ng"]).controller("myctr1", function ($scope) {
+        $scope.show1 = true;
+        $scope.show2 = true;
+        $scope.show3 = true;
+        $scope.show4 = true;
+        $scope.show5 = true;
+        $scope.show6 = true;
+        $scope.show7 = true;
+    })
+    $(".s-click").click(function () {
+        $("input").removeAttr("disabled");
+        $("select").removeAttr("disabled");
+    })*/
+   var vm = new Vue({
+       el:"#app",
+       data:{
+           show1:true,
+           show2:true,
+           show3:true,
+           show4:true,
+           show5:true,
+           show6:true,
+           show7:true,
+           psd:"",
+           r_psd:""
+
+       }
+
+   })
+  
+</script>
+</body>
+</html>

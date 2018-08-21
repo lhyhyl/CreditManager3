@@ -1,0 +1,55 @@
+body {
+  background-image: url("../img/bg.-007.png");
+  background-repeat: repeat;
+}
+.dec {
+  margin-top: 100px;
+}
+.dec .credits {
+  color: #048bd1;
+  font-size: 30px;
+  font-family: 宋体;
+  margin: 100px 0 0 50px;
+}
+.dec .credits-e {
+  font-size: 24px;
+  color: #048bd1;
+  font-family: 宋体;
+  margin-left: 50px;
+}
+.form-menu {
+  background-color: #54bef0;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.form-menu h3 {
+  font-size: 19px;
+  color: #f0f0f0;
+  padding-top: 33px;
+  padding-bottom: 50px;
+}
+.form-menu h3 a {
+  font-size: 12px;
+}
+.form-menu .submit {
+  padding-top: 50px;
+}
+.form-menu .auth-code-icon {
+  height: 33px;
+  width: 120px;
+  border: 1px solid black;
+}
+.form-menu .form-group {
+  margin-bottom: 25px;
+}
+.form-menu .change {
+  color: #fff;
+}
+.form-menu .change:hover {
+  color: purple;
+}
+.form-menu .radio-font label input {
+  color: #fff;
+}
+/*# sourceMappingURL=onload.css.map */
